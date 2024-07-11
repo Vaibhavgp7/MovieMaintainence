@@ -16,6 +16,7 @@ venv/
 /movie-frontend/node_modules
 /movie-frontend/dist
 /movie-frontend/.angular
+/movie-frontend/.vscode
 
 # IDEs and editors
 .idea/
