@@ -1,0 +1,86 @@
+/* src/app/movie-list/movie-list.component.css */
+.sort-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .sort-buttons button {
+    margin-right: 10px;
+  }
+/*   
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  } */
+  
+  /* .movie-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+  } */
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .movie-card {
+    background-color: white;
+    border-radius: 8px;
+    border: 5px solid #5ed614;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .movie-info {
+    padding: 20px;
+  }
+  
+  .movie-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .movie-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .movie-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  .vote-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .vote-buttons button {
+    flex: 1;
+    margin: 0 5px;
+  }
+  
+  .upvote {
+    background-color: #28a745;
+  }
+  
+  .downvote {
+    background-color: #dc3545;
+  }

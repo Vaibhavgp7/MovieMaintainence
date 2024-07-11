@@ -1,0 +1,28 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+movie-maintainence/db.sqlite3
+media
+
+# Virtual Environment
+env/
+venv/
+*.env
+
+# Angular
+/movie-frontend/node_modules
+/movie-frontend/dist
+/movie-frontend/.angular
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db

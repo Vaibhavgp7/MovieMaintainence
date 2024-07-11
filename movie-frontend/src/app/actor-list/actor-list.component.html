@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>Actor List</h2>
+    <div class="actor-list">
+      <div *ngFor="let actor of actors" class="actor-card">
+        <div class="actor-info">
+          <h3 class="actor-name">{{ actor.name }}</h3>
+          <p class="actor-dob">Born: {{ actor.date_of_birth | date }}</p>
+          <p class="actor-movies">Movies: {{ actor.num_movies }}</p>
+        </div>
+      </div>
+    </div>
+  </div>

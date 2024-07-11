@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Movie List</h2>
+    <div class="sort-buttons">
+        <button (click)="sortMovies('title')">Sort by Title</button>
+        <button (click)="sortMovies('release_date')">Sort by Release Date</button>
+    </div>
+    <div class="movie-list">
+      <div *ngFor="let movie of movies" class="movie-card">
+        <div class="movie-info">
+          <h3 class="movie-title">{{ movie.title }}</h3>
+          <p class="movie-description">{{ movie.description }}</p>
+          <div class="movie-meta">
+            <span>Release Date: {{ movie.release_date | date }}</span>
+            <span>Actors: {{ movie.num_actors }}</span>
+          </div>
+          <div class="vote-buttons">
+            <button class="upvote" (click)="upvote(movie)">Upvote ({{ movie.upvotes }})</button>
+            <button class="downvote" (click)="downvote(movie)">Downvote ({{ movie.downvotes }})</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
